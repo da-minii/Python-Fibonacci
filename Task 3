@@ -1,0 +1,16 @@
+terms = int(input("Enter number of terms to be printed: "))
+a, b = 0, 1
+count = 0
+if (terms <= 0):
+   print("Number of terms cannot be negative! Please enter a positive value.")
+elif (terms == 1):
+   print("Fibonacci sequence upto",terms,"term:")
+   print(a)
+else:
+   print("Fibonacci sequence upto:",terms,"terms:")
+   while count < terms:
+       print(a, end=" ")
+       c = a + b
+       a = b
+       b = c
+       count += 1
